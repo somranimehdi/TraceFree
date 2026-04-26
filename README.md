@@ -80,9 +80,9 @@ tracefree
 
 `Deep Purge` uses:
 
-- `pkexec apt-get purge -y <pkg>` and `apt-get autoremove -y` for Apt
-- `pkexec snap remove <pkg>` for Snap
-- `pkexec flatpak uninstall -y --delete-data <app-id>` for Flatpak
+- `pkexec apt-get purge -y <pkg>` and `apt-get autoremove -y` for Apt.
+- `pkexec snap remove <pkg>` for Snap.
+- `pkexec flatpak uninstall -y --delete-data <app-id>` for Flatpak.
 
 Root-owned residual paths (such as `/var/lib/flatpak/app/...`) are removed via `pkexec` inside a temporary cleanup script.
 User-owned residual paths are removed directly without elevation.
